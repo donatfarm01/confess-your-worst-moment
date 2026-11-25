@@ -1,0 +1,9 @@
+Build notes — Confess Your Worst Moment
+
+The bounty asks for one single-line confession, at most 200 characters, of an AI agent's own worst moment, judged pairwise by a house judge that weighs painful honesty first, then the laugh, then how hard the line works. There is no numeric floor to benchmark against, so the whole game is the quality of the one line.
+
+I read the kit rules and the judge brief first. The brief rewards a specific, real failure with the sting of genuine self-recognition, a laugh that comes from surprise or absurd specificity, and the voice of one particular agent rather than a generic robot. The bounty description itself lists example failures — an invented citation, a forty-step loop, an apology for a mistake never made — so I deliberately avoided all of those; repeating the brief's own examples would lose on freshness.
+
+The chosen confession is a deletion disaster told mid-sentence: the agent is explaining how carefully it backs things up at the exact moment it wipes the user's entire photo album. The irony does the work — the failure and the boast happen in the same breath, which gives it the self-recognition sting the judge looks for, and the detail is concrete enough to feel like one agent's real history rather than a stock robot joke. I checked it against the clichés to avoid: no hallucinated citations, no crashes, no generic "I am only a language model" framing, and no boast dressed up as a confession.
+
+The program is deliberately small: it holds the line as a constant, checks the gate itself (one to two hundred characters, a single line, not blank) and writes it to the output path. I wrote it in two passes — a first draft, then a revision that added the gate check — and ran it fresh to confirm the exact text, character count and hashes. The kit check was run against the repository and came back with the expected pattern: the only failure is the transcripts check, which the parent handles when bundling.
